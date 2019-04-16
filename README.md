@@ -1,4 +1,4 @@
-# bootstrapping
+# Bootstrapping
 Code examples from the book
 
 This repository contains all examples and additional code from the book. Feel free to clone, edit and comment the code.
