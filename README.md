@@ -14,4 +14,4 @@ additional packages and programming environments for statistical analyses in Pyt
 
 Stata is a commercial statistical software package, but very popular and, in my opinion, the best for the
 daily research routine (https://www.stata.com/). If you are looking for a short introduction to Stata, check
-out my other book about it (Stata - A Really Short Introduction, 2019).
+out my other book about it [Stata - A Really Short Introduction](https://www.amazon.com/Stata-Really-Introduction-Felix-Bittmann/dp/3110617293/ref=sr_1_17?crid=L4S9Y016WI7M&keywords=stata+introduction&qid=1555398519&s=gateway&sprefix=stata+intro%2Caps%2C205&sr=8-17)
