@@ -1,7 +1,7 @@
 # bootstrapping
 Code examples from the book
 
-This repository contains all examples and further code from the book. Feel free to clone, edit and comment the code.
+This repository contains all examples and additional code from the book. Feel free to clone, edit and comment the code.
 The code presented here is neither the fastest nor the most elegant, but tries to highlight how the underlying algorithms work.
 If you find bugs, please feel free to comment and improve the snippets here.
 
