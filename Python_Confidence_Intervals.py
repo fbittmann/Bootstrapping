@@ -100,6 +100,7 @@ def allcis(data, func, reps1, reps2 = 0, alpha = 0.05, prec = 3):
 	
 	###BC###
 	bias = meanboot - thetahat
+	print("Bias / SE:", bias / seboot)		#Bias/SE should be smaller than 0.25
 	x = 0
 	for element in sorted(thetastars):
 		if element <= thetahat:
