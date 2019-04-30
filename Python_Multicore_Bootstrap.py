@@ -17,25 +17,19 @@ def thetas(data, func, reps, q):
 	q.put(thetastars)
 	
 	
-def multiboot(data, func, reps, prec = 4):
-	"""Calculating Bootstrapped Standard Error using four cores"""
+def multiboot(data, func, reps, prec = 4, threads = 4):
+	"""Calculating Bootstrapped Standard Error using more than one thread"""
 	q = multi.Queue()
-	p1 = multi.Process(target=thetas, args=(data, func, (reps//4 + 1), q))
-	p1.start()
-	p2 = multi.Process(target=thetas, args=(data, func, (reps//4 + 1), q))
-	p2.start()
-	p3 = multi.Process(target=thetas, args=(data, func, (reps//4 + 1), q))
-	p3.start()
-	p4 = multi.Process(target=thetas, args=(data, func, (reps//4 + 1), q))
-	p4.start()
+	threadlist = {}
+	for x in range(threads):
+		threadlist[x+1] = multi.Process(target=thetas, args=(data, func, (reps // threads + 1), q))
+		threadlist[x+1].start()
 	results = []
-	for i in range(4):
+	for i in range(threads):
 		results += q.get(True)
 	seboot = stats.stdev(results)			#bottleneck, as this is not working in parallel
-	p1.join()
-	p2.join()
-	p3.join()
-	p4.join()
+	for x in range(threads):
+		threadlist[x+1].join()
 	return round(seboot, prec)
 	
 
