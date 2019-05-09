@@ -74,7 +74,7 @@ print(time.time() - start)
 	up the results. However, this is deadly slow and a lot of unnecessary work as
 	many results are identical (for example, [1,2,3] and [3,2,1] will give the same
 	result as both contain the same data, only in a different ordert, which
-	usually does not matter.
+	usually does not matter).
 	
 	The better algorithm accounts for this and starts by generating only all
 	possible combinations with replacement. For example, it will generate
@@ -82,11 +82,11 @@ print(time.time() - start)
 	permutations of the already created ones. Then it is done, it uses each
 	unique combination as a key in a dictionary and the value is the
 	number of permutations for this combination. For example, for
-	[1,1,1] there are no permutations, but for [1,1,2] are 3 ones, so the
-	value for this entry is 3. Then done, it runs the function only for every
+	[1,1,1] there is only one permutation, but for [1,1,2] are 3 ones, so the
+	value for this entry is 3. When done, it runs the function only for every
 	key in the dictionary, which saves a massive amount of computations. After
 	that, the weighted mean and weighted standard deviation is calculated using
 	the algorithm from wikipedia.
-	However, eve with the good algorithm, the runtime explodes when more than 8
+	However, even with the better algorithm, the runtime explodes when more than 8
 	data points are given, so in reality, exhaustive bootstrapping is
 	rarely possible."""
