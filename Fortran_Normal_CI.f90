@@ -43,6 +43,7 @@ end function fbootse
 SUBROUTINE init_random_seed2()
 	!Call this function to reset the random number generator. Otherwise all results will be the same
 	!https://stackoverflow.com/questions/31174367/slow-random-seed-generator-why
+	!All Credit goes to the original author, Joel DeWitt
   USE ISO_Fortran_env, ONLY: INT64
   IMPLICIT NONE
   INTEGER, ALLOCATABLE :: seed(:)
