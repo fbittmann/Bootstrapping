@@ -1,6 +1,9 @@
 # Bootstrapping
 Code examples from the book
 
+
+<img src="https://www.kulturkaufhaus.de/annotstream/9783110694406/COPL/Bittmann-Felix/Bootstrapping.jpg?sq=3" alt="drawing" width="200"/>
+
 This repository contains all examples and additional code from the book. Feel free to clone, edit and comment the code.
 The code presented here is neither the fastest nor the most elegant, but tries to highlight how the underlying algorithms work.
 If you find bugs, please feel free to comment and improve the snippets here.
