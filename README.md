@@ -1,4 +1,5 @@
-# Bootstrapping
+# Bootstrapping - An Integrated Approach with Python and Stata
+[Felix Bittmann (2021)](https://www.degruyter.com/document/doi/10.1515/9783110693348/html)
 Code examples from the book
 
 
